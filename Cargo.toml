@@ -60,7 +60,7 @@ crc = "3.0.0"
 serde = { version = "1.0.152", features = ["derive"] }
 
 [target.'cfg(unix)'.dependencies]
-sha1 = { version = "0.10.6", features = ["asm"], optional = true }
+sha1 = { version = "0.10.6", optional = true }
 
 [target.'cfg(windows)'.dependencies]
 # The ASM feature is broken on windows. Unclear where in the rust-crypto project
